@@ -2,6 +2,7 @@
 logs
 target
 coverage
+.idea
 .idea_modules
 .run
 .classpath
