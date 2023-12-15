@@ -1,0 +1,20 @@
+{
+  "operator": false,
+  "target": {
+    "path" : "deployment/devstack-test/container/main"
+  },
+  "accept_invalid_certificates": false,
+  "feature": {
+    "network": {
+      "incoming": "steal",
+      "outgoing": true
+    },
+    "fs": "read",
+    "env": true
+  },
+  "agent": {
+    "log_level": "mirrord=debug,warn"
+  },
+  "skip_processes": "bash;node;sbt",
+  "kubeconfig": "~/.devstack/KUBECONFIG"
+}

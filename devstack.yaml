@@ -1,0 +1,16 @@
+schema: v1
+service: devstack-test
+environments:
+   dev:
+     description: "dev environment"
+     spec:
+       ports:
+         - number: 8080
+           protocol: TCP
+       artifact:
+         image:
+           repository: devops/automation/test/simple-ag-server
+           tag: "0.1.0"
+       ingress:
+         enabled: true
+         port: 8080
