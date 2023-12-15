@@ -2,13 +2,13 @@
 logs
 target
 coverage
-/.idea
-/.idea_modules
-/.run
-/.classpath
-/.project
-/.settings
+.idea_modules
+.run
+.classpath
+.project
+.settings
 /RUNNING_PID
+project/target
 
 /.vscode
 .bsp
