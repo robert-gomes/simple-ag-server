@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-ag-server
+  namespace: simple-ag-server
 spec:
   replicas: 1
   selector:
@@ -23,6 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: simple-ag-server
+  namespace: simple-ag-server
 spec:
   selector:
     app: simple-ag-server
@@ -35,6 +37,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: simple-ag-server-ingress
+  namespace: simple-ag-server
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:

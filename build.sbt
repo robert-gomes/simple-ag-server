@@ -14,6 +14,7 @@ enablePlugins(JavaAppPackaging)
 
 // Configure sbt-native-packager
 dockerBaseImage := "openjdk:11-jre-slim"
-maintainer in Docker := "Robert Gomes (robert.gomes@agoda.com)"
+maintainer in Docker := "Robert Gomes"
 dockerExposedPorts := Seq(8080)
 mainClass in Compile := Some("SimpleServer")
+fork := true
