@@ -14,7 +14,7 @@ object SimpleServer {
         complete("hello!")
       } ~
         path("version") {
-          complete("Version is: 0.1.1")
+          complete("Version is: 0.1.2")
         }
 
     val serverBinding: Future[Http.ServerBinding] = Http().newServerAt("0.0.0.0", 8080).bind(route)
